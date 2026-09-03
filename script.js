@@ -305,3 +305,11 @@ if (typeof document !== "undefined") {
     initializeCheckoutApp();
   }
 }
+
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = {
+    calculateItemAmount,
+    calculateDiscount,
+    getDeliveryFee
+  };
+}
